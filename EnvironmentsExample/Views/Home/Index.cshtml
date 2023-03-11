@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Home Page</h1>
+<h3>@ViewBag.CurrentEnvironent</h3>
+<h3>Employee ID is: @ViewBag.EmpID</h3>
+<h3>Employee Name is: @ViewBag.EmpName</h3>
+<h3>Employee Salary is: @ViewBag.Salary</h3>
+<h3>@ViewBag.MyKey</h3>
+
+<environment include="Staging" exclude="Development, Beta">
+    <button class="button">Button only for Staging Environment</button>
+</environment>
